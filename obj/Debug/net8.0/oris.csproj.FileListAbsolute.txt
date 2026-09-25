@@ -13,3 +13,5 @@ C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.pdb
 C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.genruntimeconfig.cache
 C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\ref\oris.dll
 C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.sourcelink.json
+C:\Users\USER\source\repos\oris\oris\bin\Debug\net8.0\settings.json
+C:\Users\USER\source\repos\oris\oris\bin\Debug\net8.0\search.html

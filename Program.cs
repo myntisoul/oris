@@ -1,35 +1,33 @@
 ﻿using System.Net;
 using System.Text;
+using System.Text.Json;
 
-HttpListener server = new HttpListener();
-// установка адресов прослушки
-server.Prefixes.Add("http://127.0.0.1:8888/connection/");
-server.Start(); // начинаем прослушивать входящие подключения
 
-// получаем контекст
-var context = await server.GetContextAsync();
+namespace oris
+{
+    public class Settings
+    {
+        public string[] Prefixes { get; set; }
+    }
 
-var response = context.Response;
-// отправляемый в ответ код htmlвозвращает
-string responseText =
-    @"<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='utf8'>
-        <title>METANIT.COM</title>
-    </head>
-    <body>
-        <h2>Hello METANIT.COM</h2>
-    </body>
-</html>";
-byte[] buffer = Encoding.UTF8.GetBytes(responseText);
-// получаем поток ответа и пишем в него ответ
-response.ContentLength64 = buffer.Length;
-using Stream output = response.OutputStream;
-// отправляем данные
-await output.WriteAsync(buffer);
-await output.FlushAsync();
+    class Program
+    {
+        static async Task Main()
+        {
+            string pathSettings = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "settings.json");
+            string jsonString = File.ReadAllText(pathSettings);
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            Settings settings = JsonSerializer.Deserialize<Settings>(jsonString, options);
 
-Console.WriteLine("Запрос обработан");
+            HttpServer server = new HttpServer(settings.Prefixes);
+            server.Start();
+            Console.WriteLine("write 'stop' to stop the server");
+            while (true)
+            {
+                string command = Console.ReadLine();
+                if (command == "stop") { server.Stop(); break; }
+            }
+        }
+    }
+}
 
-server.Stop();
