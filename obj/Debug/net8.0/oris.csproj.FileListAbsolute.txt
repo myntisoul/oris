@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.AssemblyInfo.cs
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\oris\oris\bin\Debug\net8.0\oris.exe
+C:\Users\USER\source\repos\oris\oris\bin\Debug\net8.0\oris.deps.json
+C:\Users\USER\source\repos\oris\oris\bin\Debug\net8.0\oris.runtimeconfig.json
+C:\Users\USER\source\repos\oris\oris\bin\Debug\net8.0\oris.dll
+C:\Users\USER\source\repos\oris\oris\bin\Debug\net8.0\oris.pdb
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.dll
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\refint\oris.dll
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.pdb
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.genruntimeconfig.cache
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\ref\oris.dll
+C:\Users\USER\source\repos\oris\oris\obj\Debug\net8.0\oris.sourcelink.json
