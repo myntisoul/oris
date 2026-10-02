@@ -1,11 +1,18 @@
 <html>
     <style>
         * {
-            color: white;
+            color: #E9E9E9;;
+        }
+        a
+        {
+            text-decoration: none;
         }
         body
         {
             background: url(https://community.fastly.steamstatic.com/public/shared/images/joinsteam/new_login_bg_strong_mask.jpg);
+            display: flex;
+            flex-direction: column;
+            font-family: "Motiva Sans", Sans-serif;
         }
         .header
         {
@@ -13,13 +20,133 @@
             width: 100%;
             height: 104px;
         }
+        .btns-n-logo
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            align-items: center;
+            margin-left: 150px;
+        }
+        .btns1
+        {
+            gap: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        .steam-logo
+        {
+            height: 50px;
+        }
+        .high-btns
+        {
+            display: flex;
+            flex-direction: row;
+            font-size: 11px;
+            gap: 15px;
+            justify-content: flex-end;
+            margin-right: 150px;
+        }
+        .sign-lng
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+        .download-btn
+        {
+            background-color: #5c7e10;
+            /* height: 30px; */
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .header2
+        {
+            background-color: #172535;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+        }
+        .btns2
+        {
+            display: flex;
+            flex-direction: row;
+            font-size: 13px;
+            margin-left: 150px;
+            gap: 20px;
+        }
+        .btn
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+        }
+        .btn svg
+        {
+            height: 15px;
+        }
+        .search
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .search-btn
+        {
+            background-color: #1a9fff;
+            /* height: 30px; */
+            /* width: 30px; */
+            padding: 5px;
+            
+        }
+        .search-btn svg
+        {
+            height: 20px;
+        }
+        .search-div
+        {
+            background-color: lightgray;
+        }
+        .search-div input
+        {
+            background: transparent;
+        }
     </style>
     <body>
         <div class="header">
             <div class="high-btns">
                 <a href="https://store.steampowered.com/about/"><div class="download-btn">Install Steam</div></a>
                 <div class="sign-lng">
-                    <p><a href="https://steamcommunity.com/login/home/?goto=login%2Fhome%2F%3Fgoto%3D">sign in</a>  |  language</p>
+                    <p><a href="https://steamcommunity.com/login/home/?goto=login%2Fhome%2F%3Fgoto%3D">sign in</a><p>|</p><p>language</p></p>
+                </div>
+            </div>
+            <div class="btns-n-logo">
+                <img src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" class="steam-logo">
+                <div class="btns1">
+                    <p><a href="https://store.steampowered.com/?snr=1_60_4__global-header">STORE</a></p>
+                    <p><a href="https://steamcommunity.com/">COMMUNITY</a></p>
+                    <p><a href="https://store.steampowered.com/about/?snr=1_60_4__global-header">ABOUT</a></p>
+                    <p><a href="https://help.steampowered.com/en/">SUPPORT</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="btns2">
+                <div class="btn"><p>Browse</p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" role="presentation"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.81026 6.36084L8.50899 3.66211L9.6875 4.84062L5.81026 8.71786L1.93302 4.84062L3.11153 3.66211L5.81026 6.36084Z"></path></svg></div>
+                <div class="btn"><p>Recommendations</p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" role="presentation"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.81026 6.36084L8.50899 3.66211L9.6875 4.84062L5.81026 8.71786L1.93302 4.84062L3.11153 3.66211L5.81026 6.36084Z"></path></svg></div>
+                <div class="btn"><p>Categories</p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" role="presentation"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.81026 6.36084L8.50899 3.66211L9.6875 4.84062L5.81026 8.71786L1.93302 4.84062L3.11153 3.66211L5.81026 6.36084Z"></path></svg></div>
+                <div class="btn"><p>Ways to play</p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" role="presentation"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.81026 6.36084L8.50899 3.66211L9.6875 4.84062L5.81026 8.71786L1.93302 4.84062L3.11153 3.66211L5.81026 6.36084Z"></path></svg></div>
+                <div class="btn"><p>Special selections</p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" role="presentation"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.81026 6.36084L8.50899 3.66211L9.6875 4.84062L5.81026 8.71786L1.93302 4.84062L3.11153 3.66211L5.81026 6.36084Z"></path></svg></div>
+            </div>
+            <div class="search">
+                <div class="search-div">
+                    <input type="text" placeholder="Search the store">
+                </div>
+                <div class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none" aria-label="Search"><path fill="currentColor" d="M13.8296 12.0786C14.8347 10.6321 15.2623 8.86133 15.0284 7.11496C14.7945 5.36859 13.9159 3.77313 12.5656 2.64269C11.2153 1.51224 9.49114 0.928708 7.73254 1.00696C5.97394 1.08522 4.30831 1.8196 3.06357 3.06552C1.81882 4.31144 1.08514 5.97864 1.00696 7.7389C0.928776 9.49916 1.51176 11.2249 2.64114 12.5765C3.77052 13.9281 5.36446 14.8075 7.10919 15.0417C8.85391 15.2758 10.623 14.8477 12.0682 13.8417L15.2185 17L15.3997 16.8187L16.8188 15.3982L17 15.2168L13.8296 12.0786ZM8.04222 12.5824C7.14643 12.5824 6.27075 12.3165 5.52593 11.8183C4.7811 11.3202 4.20058 10.6122 3.85777 9.78376C3.51497 8.95538 3.42528 8.04384 3.60004 7.16443C3.7748 6.28502 4.20616 5.47723 4.83958 4.84321C5.47301 4.20919 6.28004 3.77742 7.15862 3.60249C8.0372 3.42757 8.94787 3.51734 9.77548 3.86047C10.6031 4.2036 11.3104 4.78467 11.8081 5.5302C12.3058 6.27573 12.5714 7.15223 12.5714 8.04887C12.5714 9.25123 12.0943 10.4043 11.2449 11.2545C10.3955 12.1047 9.24344 12.5824 8.04222 12.5824V12.5824Z"></path></svg>
                 </div>
             </div>
         </div>
